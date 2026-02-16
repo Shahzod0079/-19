@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Практическая_19.Pages.Kinoteatr;
+using Практическая_19.Pages.Afisha;
 
-namespace Практическаяя_работа_19
+namespace Практическая_19
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new KinoteatrMain());
+        }
+
+        private void Kinoteatr_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new KinoteatrMain());
+        }
+
+        private void Afisha_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AfishaMain());
         }
     }
 }

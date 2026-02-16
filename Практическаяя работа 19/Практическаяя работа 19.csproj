@@ -124,6 +124,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modell\Afisha.cs" />
+    <Compile Include="Modell\Kinoteatr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -151,8 +153,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modell\" />
-    <Folder Include="Pages\Afisha\" />
+    <Folder Include="Pages\Afisha\Items\" />
     <Folder Include="Pages\Kinoteatr\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

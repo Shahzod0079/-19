@@ -118,15 +118,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\AfishaContext.cs" />
+    <Compile Include="Classes\Common\Connection.cs" />
+    <Compile Include="Classes\KinoteatrContext.cs" />
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Kinoteatr\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modell\Afisha.cs" />
     <Compile Include="Modell\Kinoteatr.cs" />
+    <Compile Include="Pages\Kinoteatr\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -155,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Afisha\Items\" />
-    <Folder Include="Pages\Kinoteatr\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

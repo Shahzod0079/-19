@@ -126,7 +126,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\Afisha\Items\Add.xaml">
+    <Page Include="Pages\Afisha\Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Afisha\Items\Item.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,8 +146,11 @@
   <ItemGroup>
     <Compile Include="Modell\Afisha.cs" />
     <Compile Include="Modell\Kinoteatr.cs" />
-    <Compile Include="Pages\Afisha\Items\Add.xaml.cs">
+    <Compile Include="Pages\Afisha\Add.xaml.cs">
       <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Afisha\Items\Item.xaml.cs">
+      <DependentUpon>Item.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Afisha\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
